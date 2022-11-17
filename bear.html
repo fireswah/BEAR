@@ -13,9 +13,17 @@
 
 		<a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false">
 
+			<a-assets>
+				<a-asset-item id="demo" src="CrandallFellingSceneAnim.glb"></a-asset-item>
+			</a-assets>
+
 			<a-camera gps-camera rotation-reader></a-camera>
-			<!-- test -->
+
+			<a-entity gltf-model="#demo" gps-entity-place="longitude: -114.008447; latitude: 46.831291" scale="1 1 1" position="0 0 0" rotation="0S 0 0" animation-mixer></a-entity>
+
+			<!-- test location
 			<a-sphere gps-entity-place="longitude: -114.008447; latitude: 46.831291" position="" rotation="" scale="2 2 2" visible="" material="color: blue" geometry=""></a-sphere>
+		-->
 
 		</a-scene>
 
