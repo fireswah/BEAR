@@ -18,6 +18,7 @@
 
 			<a-assets>
 				<a-asset-item id="crandalldemo" src="models/CrandallFellingSceneAnim.glb"></a-asset-item>
+				<a-asset-item id="paraview" src="models/1294_StraightExtractWithTrees.gltf"></a-asset-item>
 				<a-asset-item id="thisrotate" src="models/THISExplained.glb"></a-asset-item>
 				<a-asset-item id="support" src="models/NRTCSupport.glb"></a-asset-item>
 			</a-assets>
@@ -30,6 +31,9 @@
 			</a-marker>
 			<a-marker type="pattern" url="pattern/pattern-CrandallMarker.patt">
 					<a-entity gltf-model="#crandalldemo" scale="0.2 0.2 0.2" position="0 0 0" rotation="-60 0 0" animation-mixer></a-entity>
+			</a-marker>
+			<a-marker type="pattern" url="pattern/pattern-3DFB.patt">
+					<a-entity gltf-model="#paraview" scale="0.2 0.2 0.2" position="0 0 0" rotation="-60 0 0" animation-mixer></a-entity>
 			</a-marker>
 
 			<!-- LOCATION BASED Change Lat/lon for demos as needed
